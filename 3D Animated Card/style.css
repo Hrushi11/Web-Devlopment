@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  background-color: rgb(241, 238, 238);
+}
+
+.container {
+  transform-style: preserve-3d;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 85vh;
+  width: 22rem;
+  border-radius: 30px;
+  padding: 0 3.2rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 227, 227);
+}
+
+/* .img {
+  height: 425px;
+  width: 800px;
+} */
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker img {
+  width: 13rem;
+  position: relative;
+  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 45px;
+  transition: all 0.75s ease-out;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 9rem;
+  width: 9rem;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 2.4rem;
+  transition: all 0.75s ease-out;
+  transform-style: preserve-3d;
+}
+
+.info h3 {
+  font-size: 1rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  transition: all 0.75s ease-out;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+
+.sizes button {
+  padding: 00.5rem 1.3rem;
+  background: none;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+.info {
+  justify-content: space-between;
+}
+
+button.active {
+  background: #c0bebe;
+  color: white;
+}
+
+.purchase {
+  margin-top: 2rem;
+  transition: all 0.75s ease-out;
+}
+
+.purchase button {
+  width: 100%;
+  padding: 0.4rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+.disc {
+  font-weight: lighter;
+  color: #8d8585;
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Footer */
+.footer__container {
+  background: #131313;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.98;
+}
+
+#footer__logo {
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.footer__links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__links--wrapper {
+  display: flex;
+}
+
+.footer__links--items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
+
+.footer__links--items h2 {
+  margin-bottom: 16px;
+  color: white;
+}
+
+.footer__links--items a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: 0.3 ease-out;
+}
+
+.footer__links--items a:hover {
+  color: #8b8888;
+  transition: 0.3 ease-out;
+}
+
+.social__icons--link {
+  color: white;
+  font-size: 24px;
+}
+
+.social__media {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.social__media--wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px 0px 0 40px;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.website__rights {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 820px) {
+  .footer__links {
+    padding-top: 2rem;
+  }
+
+  #footer__logo {
+    margin-bottom: 2rem;
+  }
+
+  .website__rights {
+    margin-bottom: 2rem;
+  }
+
+  .footer__links--wrapper {
+    flex-direction: column;
+  }
+
+  .social__media--wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__links--items {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+}
